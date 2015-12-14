@@ -3,5 +3,17 @@
   "version": "1.0.0",
   "description": "Custom ESLint rules for development on Sentry",
   "main": "index.js",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "scripts": {
+    "test": "node_modules/mocha/bin/_mocha tests/**/*.js --reporter dot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/getsentry/sentry-eslint"
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.6",
+    "eslint": "^1.10.3",
+    "mocha": "^2.3.4"
+  }
 }
