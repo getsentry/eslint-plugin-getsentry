@@ -1,5 +1,5 @@
 {
-  "name": "sentry-eslint",
+  "name": "eslint-plugin-getsentry",
   "version": "1.0.0",
   "description": "Custom ESLint rules for development on Sentry",
   "main": "index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/getsentry/sentry-eslint"
+    "url": "https://github.com/getsentry/eslint-plugin-getsentry"
   },
   "devDependencies": {
     "babel-eslint": "^4.1.6",
