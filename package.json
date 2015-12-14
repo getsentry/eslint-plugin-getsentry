@@ -1,0 +1,7 @@
+{
+  "name": "sentry-eslint",
+  "version": "1.0.0",
+  "description": "Custom ESLint rules for development on Sentry",
+  "main": "index.js",
+  "license": "Apache-2.0"
+}
