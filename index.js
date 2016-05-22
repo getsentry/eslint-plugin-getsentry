@@ -1,8 +1,8 @@
 module.exports = {
   rules: {
-    'jsx-needs-il8n': require('./lib/rules/jsx-needs-il8n')
+    'jsx-needs-i18n': require('./lib/rules/jsx-needs-i18n')
   },
   rulesConfig: {
-    'jsx-needs-il8n': 0
+    'jsx-needs-i18n': 0
   }
 };

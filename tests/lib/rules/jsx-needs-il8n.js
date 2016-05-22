@@ -8,7 +8,7 @@
 // Requirements
 // ------------------------------------------------------------------------------
 
-var rule = require('../../../lib/rules/jsx-needs-il8n');
+var rule = require('../../../lib/rules/jsx-needs-i18n');
 var RuleTester = require('eslint').RuleTester;
 
 // ------------------------------------------------------------------------------
@@ -16,7 +16,7 @@ var RuleTester = require('eslint').RuleTester;
 // ------------------------------------------------------------------------------
 
 var ruleTester = new RuleTester();
-ruleTester.run('jsx-needs-il8n', rule, {
+ruleTester.run('jsx-needs-i18n', rule, {
 
   valid: [
     {
