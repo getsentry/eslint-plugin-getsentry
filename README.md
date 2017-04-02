@@ -36,14 +36,14 @@ Finally, enable all of the rules that you would like to use.
 ```json
 {
   "rules": {
-    "getsentry/jsx-needs-il8n": 1
+    "getsentry/jsx-needs-i18n": 1
   }
 }
 ```
 
 # List of supported rules
 
-**jsx-needs-il8n**
+**jsx-needs-i18n**
 
 Prevent usage of unwrapped string literals in JSX components.
 
