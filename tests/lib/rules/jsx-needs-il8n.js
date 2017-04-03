@@ -31,7 +31,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     }, {
       code: [
@@ -41,7 +41,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     }, {
       code: [
@@ -52,7 +52,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     }, {
       code: [
@@ -63,7 +63,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  },',
         '});'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     }, {
       code: [
@@ -79,7 +79,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     }, {
       code: [
@@ -92,13 +92,13 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     }, {
       code: [
         'var foo = require(\'foo\');'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     }, {
       code: [
@@ -106,7 +106,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  {\'blarg\'}',
         '</Foo>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     },
 
@@ -115,21 +115,21 @@ ruleTester.run('jsx-needs-i18n', rule, {
       code: [
         '<Foo placeholder={\'foo\'}/>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     },
     {
       code: [
         '<Foo title={\'foo\'}/>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     },
     {
       code: [
         '<Foo alt={\'foo\'}/>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     },
 
@@ -138,7 +138,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
       code: [
         '<Foo>12-34</Foo>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint'
     },
   ],
@@ -152,7 +152,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     }, {
@@ -164,7 +164,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     }, {
@@ -176,7 +176,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     }, {
@@ -188,7 +188,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  },',
         '});'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     }, {
@@ -203,7 +203,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     }, {
@@ -220,7 +220,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     }, {
@@ -237,7 +237,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
         '  }',
         '}'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     },
@@ -247,7 +247,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
       code: [
         '<Foo placeholder="foo"/>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     },
@@ -255,7 +255,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
       code: [
         '<Foo title="foo"/>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     },
@@ -263,7 +263,7 @@ ruleTester.run('jsx-needs-i18n', rule, {
       code: [
         '<Foo alt="foo"/>'
       ].join('\n'),
-      args: [1],
+      options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
     }
