@@ -141,6 +141,19 @@ ruleTester.run('jsx-needs-i18n', rule, {
       options: [],
       parser: 'babel-eslint'
     },
+
+    // not match option pattern
+    {
+      code: [
+        'class Comp1 extends Component {',
+        '  render() {',
+        '    return (<div>test</div>);',
+        '  }',
+        '}'
+      ].join('\n'),
+      options: ['[^A-Za-z]'],
+      parser: 'babel-eslint'
+    },
   ],
 
   invalid: [
@@ -266,6 +279,16 @@ ruleTester.run('jsx-needs-i18n', rule, {
       options: [],
       parser: 'babel-eslint',
       errors: [{message: 'Missing translation function around string literal'}]
-    }
+    },
+
+    // match option pattern
+    {
+      code: [
+        '<Foo>12-34</Foo>'
+      ].join('\n'),
+      options: ['^[^A-Za-z]+$'],
+      parser: 'babel-eslint',
+      errors: [{message: 'Missing translation function around string literal'}]
+    },
   ]
 });
