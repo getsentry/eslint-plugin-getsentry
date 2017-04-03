@@ -4,13 +4,16 @@ module.exports = {
   },
   configs: {
     recommended: {
+      plugins: [
+        "getsentry"
+      ],
       parserOptions: {
         ecmaFeatures: {
           jsx: true
         }
       },
       rules: {
-        'jsx-needs-i18n': 1
+        'getsentry/jsx-needs-i18n': 1
       }
     }
   }
